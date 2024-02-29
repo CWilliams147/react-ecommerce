@@ -1,0 +1,19 @@
+.image {
+  width: 15vw;
+  height: 25vh;
+}
+
+.product-list {
+  padding-left: 80px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.product-title {
+  color: white;
+  font-size: 20px;
+}
+
+.product-price {
+  color: white;
+}
