@@ -1,0 +1,13 @@
+#nav {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    122deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(191, 0, 0, 1) 56%,
+    rgba(255, 173, 0, 1) 100%
+  );
+}

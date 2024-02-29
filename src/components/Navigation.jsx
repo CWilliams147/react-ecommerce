@@ -1,9 +1,11 @@
 import { PropTypes } from "prop-types";
 import { Link } from "react-router-dom";
+import "./Navigation.css";
 
 const Navigation = ({ navItems }) => {
   return (
-    <nav>
+    <nav id="nav">
+      <div className="">Shop Random Products</div>
       <ul>
         {navItems.map((link, index) => {
           return (
