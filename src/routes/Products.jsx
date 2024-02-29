@@ -1,4 +1,5 @@
 import { useLoaderData, Link } from "react-router-dom";
+import "./Products.css";
 
 export async function loader() {
   const url = "https://fakestoreapi.com/products";
@@ -12,22 +13,24 @@ const Products = () => {
 
   return (
     <>
-      <h2>Product List</h2>
-      <ul>
-        {data.map((product, index) => {
-          return (
-            <li key={index}>
-              <Link to={Products.id}>
-                <div>{product.title}</div>
-                <div>
-                  <img src={product.image} />
-                </div>
-                <div>Price: {product.price}</div>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      <div className="product-list">
+        <h2>Product List</h2>
+        <ul>
+          {data.map((product, index) => {
+            return (
+              <li key={index}>
+                <Link to={Products.id}>
+                  <div className="product-title">{product.title}</div>
+                  <div>
+                    <img className="image" src={product.image} />
+                  </div>
+                  <div className="product-price">Price: {product.price}</div>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </>
   );
 };
