@@ -11,3 +11,30 @@
     rgba(255, 173, 0, 1) 100%
   );
 }
+
+.site-title {
+  font-size: 30px;
+  background-color: #242424;
+  border-radius: 10px;
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.nav-items {
+  font-size: 30px;
+  color: white;
+  background-color: #242424;
+  width: 310px;
+  margin-left: 20px;
+  margin-right: 25px;
+  border-radius: 10px;
+  height: 900px;
+  padding-top: 20px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: white;
+}
