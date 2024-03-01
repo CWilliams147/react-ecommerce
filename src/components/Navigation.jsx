@@ -5,8 +5,8 @@ import "./Navigation.css";
 const Navigation = ({ navItems }) => {
   return (
     <nav id="nav">
-      <div className="">Shop Random Products</div>
-      <ul>
+      <div className="site-title">Shop Random Products</div>
+      <ul className="nav-items">
         {navItems.map((link, index) => {
           return (
             <li key={`${link.title}-${index}`}>
