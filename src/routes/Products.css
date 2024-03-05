@@ -1,19 +1,98 @@
 .image {
   width: 15vw;
   height: 25vh;
+  border-radius: 15px;
+}
+
+.product-list-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+  width: 1220px;
+  margin-left: 80px;
 }
 
 .product-list {
-  padding-left: 80px;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow: scroll;
+
+  overflow-x: hidden;
 }
 
 .product-title {
   color: white;
   font-size: 20px;
+  margin-bottom: 20px;
+}
+.product-title {
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+  color: #4d4d4d;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 10px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+  width: 400px;
+}
+
+.product-title:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+.product-title:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
 }
 
 .product-price {
   color: white;
+  margin-bottom: 40px;
+  font-size: 20px;
+  width: 14vw;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+.product-categories {
+  height: 200px;
+}
+
+.category-electronics {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.category-jewlery {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.category-mens-clothing {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.category-womens-clothing {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.category-header {
+  font-size: 40px;
+  text-decoration: underline;
+  background-color: #e0e0e0;
+  color: grey;
+  width: 400px;
+  text-align: center;
+  border-radius: 20px;
 }
