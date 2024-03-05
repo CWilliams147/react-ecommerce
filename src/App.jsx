@@ -7,6 +7,9 @@ import SingleProduct, {
   loader as singleProductLoader,
 } from "./routes/SingleProduct";
 import "./App.css";
+import ProductsCategory, {
+  loader as productsCategoryLoader,
+} from "./routes/ProductCategories";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,11 @@ const router = createBrowserRouter([
         path: "/products/:id",
         element: <SingleProduct />,
         loader: singleProductLoader,
+      },
+      {
+        path: "/category/:category",
+        element: <ProductsCategory />,
+        loader: productsCategoryLoader,
       },
     ],
   },
