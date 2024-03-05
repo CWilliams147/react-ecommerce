@@ -11,12 +11,12 @@ export async function loader({ params }) {
 const SingleProduct = () => {
   const { data } = useLoaderData();
   return (
-    <p>
-      {" "}
-      {data.title}
-      <img id="image" src={data.image} />
-      {data.description} {data.price}
-    </p>
+    <div className="single-item-container">
+      <div className="single-item-title">{data.title}</div>
+      <img className="single-item-image" src={data.image} />
+      <div className="single-item-description">{data.description}</div>
+      <div className="single-item-price">Price:${data.price}</div>
+    </div>
   );
 };
 
